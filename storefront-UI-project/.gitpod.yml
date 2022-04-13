@@ -1,0 +1,12 @@
+tasks:
+  - init: >
+      yarn &&
+      yarn setup &&
+      yarn server
+ports:
+  - port: 3000
+    onOpen: open-preview
+vscode:
+  extensions:
+    - Prisma.prisma
+    - rangav.vscode-thunder-client
